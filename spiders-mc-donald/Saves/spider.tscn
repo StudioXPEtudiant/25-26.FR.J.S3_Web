@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://uhlaslslkik8"]
+
+[ext_resource type="Texture2D" uid="uid://c8e2qj03saee0" path="res://Assets/MCanim3.png" id="1_ow1sb"]
+[ext_resource type="Texture2D" uid="uid://m8q5ppixnvq3" path="res://Assets/MCanim2.png" id="2_g5cfw"]
+[ext_resource type="Texture2D" uid="uid://unkd21um4gsu" path="res://Assets/MCanim1.png" id="3_vwj6i"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hxra1"]
+height = 20.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p1gx0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ow1sb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_g5cfw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vwj6i")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 4.0
+}]
+
+[node name="Spider" type="CharacterBody2D" unique_id=1714798362]
+
+[node name="SpiderHitbox" type="CollisionShape2D" parent="." unique_id=892917595]
+position = Vector2(-2.5, -1)
+shape = SubResource("CapsuleShape2D_hxra1")
+
+[node name="Walking" type="AnimatedSprite2D" parent="." unique_id=2027465971]
+sprite_frames = SubResource("SpriteFrames_p1gx0")
+animation = &"new_animation"
+frame_progress = 0.028765831

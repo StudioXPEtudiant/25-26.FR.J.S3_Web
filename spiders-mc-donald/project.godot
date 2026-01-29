@@ -10,6 +10,13 @@ config_version=5
 
 [application]
 
-config/name="Spider's McDonald"
-config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://icon.svg"
+config/name="SpidersMcDonald"
+config/features=PackedStringArray("4.6", "Forward Plus")
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
