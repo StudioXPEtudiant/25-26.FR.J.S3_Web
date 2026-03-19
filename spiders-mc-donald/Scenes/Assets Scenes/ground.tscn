@@ -1,10 +1,19 @@
 [gd_scene format=3 uid="uid://b2lfjtsihvmay"]
 
+[ext_resource type="Texture2D" uid="uid://blm5rr5wqgdm4" path="res://Assets/Ground1Web.png" id="1_fybvh"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2hpve"]
+size = Vector2(2713.6375, 167.02615)
 
 [node name="Ground" type="Area2D" unique_id=1693427671]
+scale = Vector2(1.342105, -24.320028)
 
 [node name="GroundSprite" type="Sprite2D" parent="." unique_id=262972234]
+position = Vector2(1115.412, -0.45230293)
+scale = Vector2(14.736, -1.004)
+texture = ExtResource("1_fybvh")
 
 [node name="GroundHitbox" type="CollisionShape2D" parent="." unique_id=1677074288]
+position = Vector2(1115.0393, -1.418583)
+scale = Vector2(0.34733793, 0.1804494)
 shape = SubResource("RectangleShape2D_2hpve")

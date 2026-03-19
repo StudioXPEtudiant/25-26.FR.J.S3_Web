@@ -1,3 +1,14 @@
 [gd_scene format=3 uid="uid://bxaay6u72x1v3"]
 
+[ext_resource type="PackedScene" uid="uid://b2lfjtsihvmay" path="res://Scenes/Assets Scenes/ground.tscn" id="1_s0gyx"]
+[ext_resource type="PackedScene" uid="uid://uhlaslslkik8" path="res://Scenes/Assets Scenes/spider.tscn" id="2_yjsus"]
+
 [node name="Level" type="Node2D" unique_id=2107494923]
+position = Vector2(-5, 4)
+
+[node name="Ground" parent="." unique_id=1693427671 instance=ExtResource("1_s0gyx")]
+position = Vector2(-1089, 955)
+
+[node name="Spider" parent="." unique_id=1714798362 instance=ExtResource("2_yjsus")]
+position = Vector2(-529, 220.00002)
+scale = Vector2(1.5919981, 1.6841327)
