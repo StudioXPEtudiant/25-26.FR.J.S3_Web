@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8e2qj03saee0"
-path="res://.godot/imported/MCanim3.png-90efbff18818c2a7064df78a44fd0d97.ctex"
+uid="uid://unkd21um4gsu"
+path="res://.godot/imported/MCanim1.png-3f80a7773828c1dbc69a0357b7ecc899.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MCanim3.png"
-dest_files=["res://.godot/imported/MCanim3.png-90efbff18818c2a7064df78a44fd0d97.ctex"]
+source_file="res://Assets/Animations/Spider Animations/MCanim1.png"
+dest_files=["res://.godot/imported/MCanim1.png-3f80a7773828c1dbc69a0357b7ecc899.ctex"]
 
 [params]
 

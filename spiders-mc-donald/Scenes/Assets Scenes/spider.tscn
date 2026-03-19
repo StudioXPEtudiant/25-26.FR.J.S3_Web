@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://uhlaslslkik8"]
 
-[ext_resource type="Texture2D" uid="uid://c8e2qj03saee0" path="res://Assets/MCanim3.png" id="1_ow1sb"]
-[ext_resource type="Texture2D" uid="uid://m8q5ppixnvq3" path="res://Assets/MCanim2.png" id="2_g5cfw"]
-[ext_resource type="Texture2D" uid="uid://unkd21um4gsu" path="res://Assets/MCanim1.png" id="3_vwj6i"]
+[ext_resource type="Texture2D" uid="uid://c8e2qj03saee0" path="res://Assets/Animations/Spider Animations/MCanim3.png" id="1_ow1sb"]
+[ext_resource type="Texture2D" uid="uid://m8q5ppixnvq3" path="res://Assets/Animations/Spider Animations/MCanim2.png" id="2_g5cfw"]
+[ext_resource type="Texture2D" uid="uid://unkd21um4gsu" path="res://Assets/Animations/Spider Animations/MCanim1.png" id="3_vwj6i"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hxra1"]
 height = 20.0
@@ -33,4 +33,4 @@ shape = SubResource("CapsuleShape2D_hxra1")
 [node name="Walking" type="AnimatedSprite2D" parent="." unique_id=2027465971]
 sprite_frames = SubResource("SpriteFrames_p1gx0")
 animation = &"new_animation"
-frame_progress = 0.028765831
+frame_progress = 0.098032124
