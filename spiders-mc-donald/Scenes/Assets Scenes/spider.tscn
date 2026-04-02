@@ -21,7 +21,7 @@ animations = [{
 "texture": ExtResource("3_vwj6i")
 }],
 "loop": true,
-"name": &"new_animation",
+"name": &"running",
 "speed": 4.0
 }, {
 "frames": [{
@@ -29,7 +29,7 @@ animations = [{
 "texture": ExtResource("3_vwj6i")
 }],
 "loop": true,
-"name": &"new_animation_1",
+"name": &"stand",
 "speed": 5.0
 }]
 
@@ -46,5 +46,5 @@ shape = SubResource("RectangleShape2D_28n33")
 position = Vector2(-1, -3)
 scale = Vector2(5.3437505, 5.25)
 sprite_frames = SubResource("SpriteFrames_p1gx0")
-animation = &"new_animation_1"
-autoplay = "new_animation_1"
+animation = &"running"
+autoplay = "stand"
