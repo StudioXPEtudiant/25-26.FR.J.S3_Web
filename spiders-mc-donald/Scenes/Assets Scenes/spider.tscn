@@ -1,11 +1,12 @@
 [gd_scene format=3 uid="uid://uhlaslslkik8"]
 
 [ext_resource type="Texture2D" uid="uid://c8e2qj03saee0" path="res://Assets/Animations/Spider Animations/MCanim3.png" id="1_ow1sb"]
+[ext_resource type="Script" uid="uid://bvwdxtxrigafw" path="res://Scenes/Assets Scenes/spider.gd" id="1_tmjfb"]
 [ext_resource type="Texture2D" uid="uid://m8q5ppixnvq3" path="res://Assets/Animations/Spider Animations/MCanim2.png" id="2_g5cfw"]
 [ext_resource type="Texture2D" uid="uid://unkd21um4gsu" path="res://Assets/Animations/Spider Animations/MCanim1.png" id="3_vwj6i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_28n33"]
-size = Vector2(21.747972, 20.866142)
+size = Vector2(21.747972, 19.88189)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_p1gx0"]
 animations = [{
@@ -22,13 +23,22 @@ animations = [{
 "loop": true,
 "name": &"new_animation",
 "speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_vwj6i")
+}],
+"loop": true,
+"name": &"new_animation_1",
+"speed": 5.0
 }]
 
 [node name="Spider" type="CharacterBody2D" unique_id=1714798362]
 position = Vector2(3, 1)
+script = ExtResource("1_tmjfb")
 
 [node name="SpiderHitbox" type="CollisionShape2D" parent="." unique_id=892917595]
-position = Vector2(-12.500002, -8.999998)
+position = Vector2(-12.500002, -11.500001)
 scale = Vector2(4.919999, 5.0800004)
 shape = SubResource("RectangleShape2D_28n33")
 
@@ -36,4 +46,5 @@ shape = SubResource("RectangleShape2D_28n33")
 position = Vector2(-1, -3)
 scale = Vector2(5.3437505, 5.25)
 sprite_frames = SubResource("SpriteFrames_p1gx0")
-animation = &"new_animation"
+animation = &"new_animation_1"
+autoplay = "new_animation_1"
