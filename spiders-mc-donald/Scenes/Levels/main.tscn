@@ -31,6 +31,6 @@ metadata/_edit_group_ = true
 
 [node name="Background1web" type="Sprite2D" parent="." unique_id=512698054]
 z_index = -1
-position = Vector2(581.50006, 244.75002)
-scale = Vector2(9.054688, 7.7265625)
+position = Vector2(584.25, 323.24997)
+scale = Vector2(9.26172, 9.5078125)
 texture = ExtResource("3_u872a")

@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://uhlaslslkik8"]
 
-[ext_resource type="Texture2D" uid="uid://c8e2qj03saee0" path="res://Assets/Animations/Spider Animations/MCanim3.png" id="1_ow1sb"]
 [ext_resource type="Script" uid="uid://bvwdxtxrigafw" path="res://Scenes/Assets Scenes/spider.gd" id="1_tmjfb"]
-[ext_resource type="Texture2D" uid="uid://m8q5ppixnvq3" path="res://Assets/Animations/Spider Animations/MCanim2.png" id="2_g5cfw"]
+[ext_resource type="Texture2D" uid="uid://ob744nera06c" path="res://Assets/Spider1anim.png" id="2_4wic5"]
 [ext_resource type="Texture2D" uid="uid://unkd21um4gsu" path="res://Assets/Animations/Spider Animations/MCanim1.png" id="3_vwj6i"]
+[ext_resource type="Texture2D" uid="uid://dq4ysgbynrss7" path="res://Assets/Spider2anim.png" id="3_x0q5x"]
+[ext_resource type="Texture2D" uid="uid://dlq7so8g8mbb1" path="res://Assets/Spider3anim.png" id="4_6i03w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_28n33"]
 size = Vector2(21.747972, 19.88189)
@@ -12,14 +13,19 @@ size = Vector2(21.747972, 19.88189)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_ow1sb")
+"texture": ExtResource("2_4wic5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_g5cfw")
+"texture": ExtResource("3_x0q5x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_vwj6i")
+"texture": ExtResource("4_6i03w")
 }],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}, {
+"frames": [],
 "loop": true,
 "name": &"running",
 "speed": 4.0
@@ -46,5 +52,5 @@ shape = SubResource("RectangleShape2D_28n33")
 position = Vector2(-1, -3)
 scale = Vector2(5.3437505, 5.25)
 sprite_frames = SubResource("SpriteFrames_p1gx0")
-animation = &"running"
+animation = &"new_animation"
 autoplay = "stand"
