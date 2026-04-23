@@ -1,13 +1,15 @@
 [gd_scene format=3 uid="uid://uhlaslslkik8"]
 
 [ext_resource type="Script" uid="uid://bvwdxtxrigafw" path="res://Scenes/Assets Scenes/spider.gd" id="1_tmjfb"]
-[ext_resource type="Texture2D" uid="uid://ob744nera06c" path="res://Assets/Spider1anim.png" id="2_4wic5"]
-[ext_resource type="Texture2D" uid="uid://unkd21um4gsu" path="res://Assets/Animations/Spider Animations/MCanim1.png" id="3_vwj6i"]
-[ext_resource type="Texture2D" uid="uid://dq4ysgbynrss7" path="res://Assets/Spider2anim.png" id="3_x0q5x"]
-[ext_resource type="Texture2D" uid="uid://dlq7so8g8mbb1" path="res://Assets/Spider3anim.png" id="4_6i03w"]
+[ext_resource type="Texture2D" uid="uid://ob744nera06c" path="res://Assets/Animations/Spider Animations/Spider1anim.png" id="2_4wic5"]
+[ext_resource type="Texture2D" uid="uid://dq4ysgbynrss7" path="res://Assets/Animations/Spider Animations/Spider2anim.png" id="3_x0q5x"]
+[ext_resource type="Texture2D" uid="uid://dlq7so8g8mbb1" path="res://Assets/Animations/Spider Animations/Spider3anim.png" id="4_6i03w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_28n33"]
 size = Vector2(21.747972, 19.88189)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tmjfb"]
+load_path = "res://.godot/imported/MCanim1.png-3f80a7773828c1dbc69a0357b7ecc899.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_p1gx0"]
 animations = [{
@@ -32,7 +34,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_vwj6i")
+"texture": SubResource("CompressedTexture2D_tmjfb")
 }],
 "loop": true,
 "name": &"stand",
