@@ -13,6 +13,11 @@ load_path = "res://.godot/imported/MCanim1.png-3f80a7773828c1dbc69a0357b7ecc899.
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_p1gx0"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"new_animation_1",
+"speed": 4.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_4wic5")
@@ -24,13 +29,8 @@ animations = [{
 "texture": ExtResource("4_6i03w")
 }],
 "loop": true,
-"name": &"new_animation",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
 "name": &"running",
-"speed": 4.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -41,7 +41,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Spider" type="CharacterBody2D" unique_id=1714798362]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1714798362]
 position = Vector2(3, 1)
 script = ExtResource("1_tmjfb")
 
@@ -54,5 +54,5 @@ shape = SubResource("RectangleShape2D_28n33")
 position = Vector2(-1, -3)
 scale = Vector2(5.3437505, 5.25)
 sprite_frames = SubResource("SpriteFrames_p1gx0")
-animation = &"new_animation"
+animation = &"running"
 autoplay = "stand"
