@@ -7,6 +7,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yjsus"]
 size = Vector2(63.98695, 30.169033)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u872a"]
+size = Vector2(139, 69)
+
 [node name="Level" type="Node2D" unique_id=2107494923]
 position = Vector2(-5, 4)
 
@@ -21,16 +24,28 @@ metadata/_edit_group_ = true
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=762246064]
 position = Vector2(0.46934426, 13.481331)
 texture = ExtResource("2_u872a")
-metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2109280519]
 position = Vector2(0.31289673, 14.720146)
 scale = Vector2(0.99999976, 0.9999998)
 shape = SubResource("RectangleShape2D_yjsus")
-metadata/_edit_group_ = true
 
 [node name="Background1web" type="Sprite2D" parent="." unique_id=512698054]
 z_index = -1
-position = Vector2(584.25, 323.24997)
+position = Vector2(584, 187)
 scale = Vector2(9.26172, 9.5078125)
 texture = ExtResource("3_u872a")
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1875408048]
+position = Vector2(510, 404)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1538394706]
+position = Vector2(37.5, 24.5)
+shape = SubResource("RectangleShape2D_u872a")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2" unique_id=409359291]
+position = Vector2(38.500004, 20.99999)
+scale = Vector2(2.203125, 2.3124995)
+texture = ExtResource("2_u872a")
