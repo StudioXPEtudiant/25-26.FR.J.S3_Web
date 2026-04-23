@@ -6,10 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dlq7so8g8mbb1" path="res://Assets/Animations/Spider Animations/Spider3anim.png" id="4_6i03w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_28n33"]
-size = Vector2(21.747972, 19.88189)
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tmjfb"]
-load_path = "res://.godot/imported/MCanim1.png-3f80a7773828c1dbc69a0357b7ecc899.ctex"
+size = Vector2(17.073174, 10.433071)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_p1gx0"]
 animations = [{
@@ -23,10 +20,10 @@ animations = [{
 "texture": ExtResource("2_4wic5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_x0q5x")
+"texture": ExtResource("4_6i03w")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_6i03w")
+"texture": ExtResource("3_x0q5x")
 }],
 "loop": true,
 "name": &"running",
@@ -34,7 +31,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_tmjfb")
+"texture": ExtResource("2_4wic5")
 }],
 "loop": true,
 "name": &"stand",
@@ -46,7 +43,7 @@ position = Vector2(3, 1)
 script = ExtResource("1_tmjfb")
 
 [node name="SpiderHitbox" type="CollisionShape2D" parent="." unique_id=892917595]
-position = Vector2(-12.500002, -11.500001)
+position = Vector2(-1.000001, -13.499998)
 scale = Vector2(4.919999, 5.0800004)
 shape = SubResource("RectangleShape2D_28n33")
 
@@ -54,5 +51,6 @@ shape = SubResource("RectangleShape2D_28n33")
 position = Vector2(-1, -3)
 scale = Vector2(5.3437505, 5.25)
 sprite_frames = SubResource("SpriteFrames_p1gx0")
-animation = &"running"
+animation = &"stand"
 autoplay = "stand"
+frame_progress = 0.9852281
